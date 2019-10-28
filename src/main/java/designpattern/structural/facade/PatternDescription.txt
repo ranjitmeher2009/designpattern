@@ -1,0 +1,16 @@
+Facade pattern is one of structural design pattern among other Gang of Four design patterns.
+The facade pattern is appropriate when we have a complex system that we want to expose to clients in a simplified way.
+Its purpose is to hide internal complexity behind a single interface that appears simple from the outside.
+
+facade encapsulates a complex subsystem behind a simple interface. It hides much of the complexity and makes the subsystem easy to use.
+
+Also, if we need to use the complex subsystem directly, we still can do that; we aren't forced to use the facade all the time.
+
+Besides a much simpler interface, there's one more benefit of using this design pattern.
+It decouples a client implementation from the complex subsystem. Thanks to this, we can make changes to the existing subsystem and don't affect a client.
+
+Drawback:
+
+The facade pattern doesn't force us to unwanted tradeoffs, because it only adds additional layers of abstraction.
+
+Sometimes the pattern can be overused in simple scenarios, which will lead to redundant implementations.
