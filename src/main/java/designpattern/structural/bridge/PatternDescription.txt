@@ -1,0 +1,17 @@
+The bridge design pattern is a structural pattern used to decouple an abstraction from its implementation
+so that the two can vary independently.
+
+Bridge patterns decouple the abstract class and its implementation classes by providing a bridge structure between them.
+This bridge uses encapsulation, aggregation, and inheritance to separate responsibilities into various classes.
+
+The bridge pattern is useful when both the class and what it does vary,
+often because changes in the class can be made easily with minimal prior knowledge about the program.
+
+We can think of the class itself as an abstraction, what the class can do as the implementation,
+and the bridge pattern, itself, as two layers of abstraction.
+
+The bridge pattern allows us to avoid compile-time binding between an abstraction and its implementation.
+This is so that an implementation can be selected at run-time.
+In other words, by using the bridge pattern, we can configure an abstraction with an implementor object at run-time.
+
+Bridge Pattern comes before USE like in development stage. But Adapter pattern comes after development. Its used by client.

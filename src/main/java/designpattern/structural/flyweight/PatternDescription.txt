@@ -1,0 +1,30 @@
+Flyweight pattern is one of the structural design patterns as this pattern provides ways to decrease object count thus improving application required objects structure.
+Flyweight pattern is used when we need to create a large number of similar objects (say 105).
+One important feature of flyweight objects is that they are immutable.
+This means that they cannot be modified once they have been constructed.
+
+Why do we care for number of objects in our program?
+
+Less number of objects reduces the memory usage, and it manages to keep us away from errors related to memory like java.lang.OutOfMemoryError.
+Although creating an object in Java is really fast, we can still reduce the execution time of our program by sharing objects.
+
+
+
+In Flyweight pattern we use a HashMap that stores reference to the object which have already been created, every object is associated with a key.
+Now when a client wants to create an object, he simply has to pass a key associated with it
+and if the object has already been created we simply get the reference to that object else it creates a new object and then returns it reference to the client.
+
+
+This pattern is used to reduce the memory footprint. It can also improve performance in applications where object instantiation is expensive.
+Simply put, the flyweight pattern is based on a factory which recycles created objects by storing them after creation.
+Each time an object is requested, the factory looks up the object in order to check if it's already been created.
+If it has, the existing object is returned – otherwise, a new one is created, stored and then returned.
+
+The main elements of the pattern are:
+
+an interface which defines the operations that the client code can perform on the flyweight object
+one or more concrete implementations of our interface
+a factory to handle objects instantiation and caching
+
+used to create a large number object by factory pattern. 1st time object created and store in cache.
+Next time if any object creation request its get from cache. else create a new one and store in cache.
